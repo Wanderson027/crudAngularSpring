@@ -2,11 +2,12 @@
 @import '@angular/material/theming';
 @include mat-core();
 
-$custom-app-primary: mat-palette($mat-purple);
-$custom-app-secondary: mat-palette($mat-blue);
+
+$custom-app-primary: mat-palette($mat-blue);
+
 $custom-app-warn: mat-palette($mat-red);
 
-$custom-theme: mat-light-theme($custom-app-primary, $custom-app-secondary, $custom-app-warn);
+$custom-theme: mat-light-theme($custom-app-primary, $custom-app-warn);
 
 @include angular-material-theme($custom-theme);
 
