@@ -9,5 +9,6 @@ import { CategoriaPipe } from './pipes/categoria.pipe';
   declarations: [ErrorDialogComponent, CategoriaPipe],
   imports: [CommonModule, AppMaterialModule],
   exports: [ErrorDialogComponent, CategoriaPipe],
+  
 })
 export class SharedModule {}
