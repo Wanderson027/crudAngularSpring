@@ -21,20 +21,23 @@ export class CoursesComponent implements OnInit {
     ) {
     this.courses$ = this.coursesService.list().pipe(
       catchError(error => {
-        console.log(error)
+        this.onError('Erro ao carregar cursos!');
         return of([])
       })
     )
   }
 
-  onErrror(errorMsg: string) {
+  onError(errorMsg: string) {
     this.dialog.open(ErrorDialogComponent, {
-      data: {
-        animal: 'panda',
-      },
+      data: errorMsg,
     });
   }
 
+  public salvarGenero(){
+    var input = document.querySelector(".alinea");
+    var terxto = input;
+    console.log()
+  }
 
   ngOnInit(): void {
 
